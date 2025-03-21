@@ -2,7 +2,12 @@
 An educational Ball-Balancing Robot. This project introduces some of the core concepts of robotics: programming, inverse kinematics, computer vision, and PID control.
 
 # Video Overview
-[![Watch the video](https://img.youtube.com/vi/l92hJUUjWb0/0.jpg)](https://www.youtube.com/watch?v=l92hJUUjWb0&t=6s)
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=l92hJUUjWb0&t=6s">
+    <img src="https://img.youtube.com/vi/l92hJUUjWb0/0.jpg" alt="Watch the video" width="640">
+  </a>
+</div>
+
 
 
 ![IMG_8879](https://github.com/user-attachments/assets/d2104fa5-d2e3-4ce5-b4ce-02b849706bc1)
