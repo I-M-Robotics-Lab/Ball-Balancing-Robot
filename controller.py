@@ -4,9 +4,11 @@ import busio
 from adafruit_pca9685 import PCA9685
 from adafruit_servokit import ServoKit
 from robotKinematics import RobotKinematics
-from utilities import radians_to_degrees, clamp
 import math
 import random
+
+def clamp(value, lower=19, upper=90):
+    return max(lower, min(value, upper))
 
 class RobotController:
     def __init__(self, model, lp=7.125, l1=6.20, l2=4.50, lb=4.00):
@@ -36,10 +38,11 @@ class RobotController:
         self.Goto_time_spherical(0, 0, 8.26, t=0.25)
         time.sleep(1)
         print("Initialized!")
-
-    def set_motor_angles(self, theta1, theta2, theta3):
     
-        self.s1.angle = clamp(theta1) - 4
+    def set_motor_angles(self, theta1, theta2, theta3):
+        
+        # Calibrate offsets 
+        self.s1.angle = clamp(theta1) - 4  # clamp(theta_n) + OFFSET_Sn
         self.s2.angle = clamp(theta2) 
         self.s3.angle = clamp(theta3) 
 
@@ -161,7 +164,6 @@ if __name__ == "__main__":
     model = RobotKinematics()
     rc = RobotController(model)
     time.sleep(0.5)
-    rc.Dance1()
 
 
 
