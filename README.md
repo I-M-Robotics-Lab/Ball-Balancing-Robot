@@ -8,6 +8,16 @@ An educational Ball-Balancing Robot. This project introduces some of the core co
   </a>
 </div>
 
+# Pictures
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a4252720-81c4-4c18-85fc-d38fa5c8ed7a" alt="2" width="700" />
+</div>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/8eb9a714-8835-46d8-bd33-cb98a85422c6" alt="1" width="700" />
+</div>
+
+
 # Build Instruction
 
 The 3D models and print profile for a Bambu A1 printer can be found here: https://makerworld.com/en/models/1197770-ball-balancing-robot#profileId-1210633
@@ -34,15 +44,6 @@ The materials needed are:
 | 4-10 Bearing                 | 6        |
 | Rubber Foot 12x9x9           | 3        |
 | M5 Washer                    | 6        |
-
-# Pictures
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/a4252720-81c4-4c18-85fc-d38fa5c8ed7a" alt="2" width="700" />
-</div>
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/8eb9a714-8835-46d8-bd33-cb98a85422c6" alt="1" width="700" />
-</div>
 
 ---
 
