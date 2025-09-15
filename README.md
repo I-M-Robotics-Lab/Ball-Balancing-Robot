@@ -38,13 +38,10 @@ The materials needed are:
 # Pictures
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/d2104fa5-d2e3-4ce5-b4ce-02b849706bc1" alt="IMG_8879" width="500" />
+  <img src="https://github.com/user-attachments/assets/a4252720-81c4-4c18-85fc-d38fa5c8ed7a" alt="2" width="700" />
 </div>
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/a4252720-81c4-4c18-85fc-d38fa5c8ed7a" alt="2" width="500" />
-</div>
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/8eb9a714-8835-46d8-bd33-cb98a85422c6" alt="1" width="500" />
+  <img src="https://github.com/user-attachments/assets/8eb9a714-8835-46d8-bd33-cb98a85422c6" alt="1" width="700" />
 </div>
 
 ---
