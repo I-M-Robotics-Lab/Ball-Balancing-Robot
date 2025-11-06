@@ -1,6 +1,8 @@
 # Ball-Balancing-Robot
 An educational Ball-Balancing Robot. This project introduces some of the core concepts of robotics: programming, inverse kinematics, computer vision, and PID control.
 
+Discord: https://discord.com/invite/WJuUWsy6DJ
+
 # Video Overview
 <div align="center">
   <a href="https://www.youtube.com/watch?v=l92hJUUjWb0&t=6s">
