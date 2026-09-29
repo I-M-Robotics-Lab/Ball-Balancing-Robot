@@ -1,0 +1,9 @@
+{
+  "master": false,
+  "help": false,
+  "cam": false,
+  "cam_mask": false,
+  "ctrl": false,
+  "pid": false,
+  "overlay": true
+}

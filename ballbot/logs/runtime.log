@@ -1,0 +1,278 @@
+[0:11:09.618941709] [1863] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[0:11:09.649536928] [1866] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[0:11:09.655555399] [1866] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[0:11:09.655648954] [1866] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media1 and ISP device /dev/media0
+[0:11:09.655694472] [1866] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/main.py", line 72, in <module>
+    cam = Camera(...)
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/camera.py", line 12, in __init__
+    config = self.picam2.create_preview_configuration(main={"size": resolution, "format": format}, controls={"FrameDurationLimits": (8333, 8333)})
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 777, in create_preview_configuration
+    self.align_stream(main, optimal=False)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 1036, in align_stream
+    stream_config["size"] = (size[0] - size[0] % align, size[1] - size[1] % 2)
+                             ~~~~^^^
+TypeError: 'ellipsis' object is not subscriptable
+[0:45:55.500591396] [2007] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[0:45:55.527768536] [2010] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[0:45:55.533943420] [2010] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[0:45:55.534050160] [2010] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media1 and ISP device /dev/media0
+[0:45:55.534103863] [2010] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[0:45:55.541450217] [2007] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1215 [0mconfiguring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[0:45:55.541947138] [2010] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:620 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. HW=ON Calibration=/home/jdryan1023/ballbot/config/calibration.json
+[CAL] neutrals: s1=54.0 s2=54.0 s3=54.0
+Servos armed (neutral-first)
+========================================
+[INFO] Robot running. Press 't' for debug master. 'h' for help. Ctrl+C to exit.
+========================================
+
+[INFO] Ctrl+C received. Exiting...
+Disarming servos
+[INFO] Robot disarmed. Camera closed. Bye.
+[0:46:19.983273176] [2038] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[0:46:20.010155599] [2041] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[0:46:20.016208003] [2041] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[0:46:20.016321705] [2041] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media1 and ISP device /dev/media0
+[0:46:20.016367946] [2041] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[0:46:20.023674634] [2038] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1215 [0mconfiguring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[0:46:20.024240980] [2041] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:620 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. HW=ON Calibration=/home/jdryan1023/ballbot/config/calibration.json
+[CAL] neutrals: s1=54.0 s2=54.0 s3=54.0
+Servos armed (neutral-first)
+========================================
+[INFO] Robot running. Press 't' for debug master. 'h' for help. Ctrl+C to exit.
+========================================
+
+[INFO] Ctrl+C received. Exiting...
+Disarming servos
+[INFO] Robot disarmed. Camera closed. Bye.
+[4:19:26.351853450] [2362] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[4:19:26.378897021] [2365] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[4:19:26.384968206] [2365] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[4:19:26.385065279] [2365] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media1 and ISP device /dev/media0
+[4:19:26.385110094] [2365] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[4:19:26.392340900] [2362] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1215 [0mconfiguring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[4:19:26.392830731] [2365] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:620 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. HW=ON Calibration=/home/jdryan1023/ballbot/config/calibration.json
+[CAL] neutrals: s1=54.0 s2=54.0 s3=54.0
+Servos armed (no motion)
+========================================
+[INFO] Robot running. Press 't' for debug master. 'h' for help. Ctrl+C to exit.
+========================================
+
+[INFO] Ctrl+C received. Exiting...
+Disarming servos
+[INFO] Robot disarmed. Camera closed. Bye.
+[4:20:19.249695251] [2382] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[4:20:19.276629224] [2385] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[4:20:19.282593093] [2385] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[4:20:19.282691666] [2385] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media1 and ISP device /dev/media0
+[4:20:19.282741092] [2385] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[4:20:19.289957767] [2382] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1215 [0mconfiguring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[4:20:19.290453616] [2385] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:620 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. HW=ON Calibration=/home/jdryan1023/ballbot/config/calibration.json
+[CAL] neutrals: s1=54.0 s2=54.0 s3=54.0
+Servos armed (no motion)
+========================================
+[INFO] Robot running. Press 't' for debug master. 'h' for help. Ctrl+C to exit.
+========================================
+
+[INFO] Ctrl+C received. Exiting...
+Disarming servos
+[INFO] Robot disarmed. Camera closed. Bye.
+[4:21:01.824816370] [2402] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[4:21:01.851947838] [2405] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[4:21:01.858004779] [2405] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[4:21:01.858101019] [2405] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media1 and ISP device /dev/media0
+[4:21:01.858144111] [2405] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[4:21:01.865477562] [2402] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1215 [0mconfiguring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[4:21:01.865979374] [2405] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:620 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. HW=ON Calibration=/home/jdryan1023/ballbot/config/calibration.json
+[CAL] neutrals: s1=54.0 s2=54.0 s3=54.0
+Servos armed (no motion)
+========================================
+[INFO] Robot running. Press 't' for debug master. 'h' for help. Ctrl+C to exit.
+========================================
+
+[INFO] Ctrl+C received. Exiting...
+Disarming servos
+[INFO] Robot disarmed. Camera closed. Bye.
+[5:02:30.694296518] [2595] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[5:02:30.721475817] [2598] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[5:02:30.727442738] [2598] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[5:02:30.727544182] [2598] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media1 and ISP device /dev/media0
+[5:02:30.727593218] [2598] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[5:02:30.734792312] [2595] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1215 [0mconfiguring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[5:02:30.735295641] [2598] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:620 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. HW=ON Calibration=/home/jdryan1023/ballbot/config/calibration.json
+[CAL] neutrals: s1=54.0 s2=54.0 s3=54.0
+Servos armed (no motion)
+[5:02:50.791343249] [2617] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[5:02:50.816595606] [2620] [1;31mERROR [1;37mV4L2 [1;34mv4l2_device.cpp:411 [0;32m'imx219 10-0010': [0mUnable to set controls: Device or resource busy
+[5:02:50.826467543] [2620] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[5:02:50.836487461] [2620] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[5:02:50.836599979] [2620] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media1 and ISP device /dev/media0
+[5:02:50.836662682] [2620] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[5:02:50.839714355] [2617] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1020 [0mPipeline handler in use by another process
+Camera __init__ sequence did not complete.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 353, in __init__
+    self._open_camera()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 565, in _open_camera
+    self.camera.acquire()
+    ~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: Failed to acquire camera: Device or resource busy
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/main.py", line 70, in <module>
+    cam = Camera()
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/camera.py", line 11, in __init__
+    self.picam2 = Picamera2()
+                  ~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 365, in __init__
+    raise RuntimeError("Camera __init__ sequence did not complete.")
+RuntimeError: Camera __init__ sequence did not complete.
+[5:23:35.807477536] [2697] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[5:23:35.855190912] [2700] [1;31mERROR [1;37mV4L2 [1;34mv4l2_device.cpp:411 [0;32m'imx219 10-0010': [0mUnable to set controls: Device or resource busy
+[5:23:35.872311329] [2700] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[5:23:35.883768482] [2700] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[5:23:35.884224663] [2700] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media1 and ISP device /dev/media0
+[5:23:35.884581438] [2700] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[5:23:35.890527531] [2697] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1020 [0mPipeline handler in use by another process
+Camera __init__ sequence did not complete.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 353, in __init__
+    self._open_camera()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 565, in _open_camera
+    self.camera.acquire()
+    ~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: Failed to acquire camera: Device or resource busy
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/main.py", line 70, in <module>
+    cam = Camera()
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/camera.py", line 11, in __init__
+    self.picam2 = Picamera2()
+                  ~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 365, in __init__
+    raise RuntimeError("Camera __init__ sequence did not complete.")
+RuntimeError: Camera __init__ sequence did not complete.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/main.py", line 6, in <module>
+    from .camera import Camera
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/camera.py", line 3, in <module>
+    from picamera2 import Picamera2, Preview
+  File "/usr/lib/python3/dist-packages/picamera2/__init__.py", line 11, in <module>
+    from .picamera2 import Picamera2, Preview
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 27, in <module>
+    import picamera2.platform as Platform
+  File "/usr/lib/python3/dist-packages/picamera2/platform.py", line 18, in <module>
+    with open(device, 'rb+', buffering=0) as fd:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+[0:05:24.376338894] [1779] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[0:05:24.403726477] [1782] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[0:05:24.409767685] [1782] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[0:05:24.409901479] [1782] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media1 and ISP device /dev/media2
+[0:05:24.409941757] [1782] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[0:05:24.423064732] [1779] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1215 [0mconfiguring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[0:05:24.423555725] [1782] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:620 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. HW=ON Calibration=/home/jdryan1023/ballbot/config/calibration.json
+[CAL] neutrals: s1=54.0 s2=54.0 s3=54.0
+Servos armed (no motion)
+========================================
+[INFO] Robot running. Press 't' for debug master. 'h' for help. Ctrl+C to exit.
+========================================
+
+[INFO] Signal 2 received. Shutting down...
+Disarming servos
+[INFO] Robot disarmed. Camera closed. Bye.
+[25:32:13.808739566] [4282] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[25:32:13.835738902] [4285] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[25:32:13.841703530] [4285] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[25:32:13.841783863] [4285] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media1 and ISP device /dev/media2
+[25:32:13.841822807] [4285] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[25:32:13.849091441] [4282] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1215 [0mconfiguring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[25:32:13.849588436] [4285] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:620 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. HW=ON Calibration=/home/jdryan1023/ballbot/config/calibration.json
+[CAL] neutrals: s1=54.0 s2=54.0 s3=54.0
+Servos armed (no motion)
+========================================
+[INFO] Robot running. Press 't' for debug master. 'h' for help. Ctrl+C to exit.
+========================================
+
+[INFO] Signal 2 received. Shutting down...
+Disarming servos
+[INFO] Robot disarmed. Camera closed. Bye.
+[25:34:12.358337149] [4303] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[25:34:12.385577335] [4306] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[25:34:12.391615852] [4306] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[25:34:12.391695777] [4306] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media1 and ISP device /dev/media2
+[25:34:12.391735388] [4306] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[25:34:12.399011319] [4303] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1215 [0mconfiguring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[25:34:12.399505647] [4306] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:620 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. HW=ON Calibration=/home/jdryan1023/ballbot/config/calibration.json
+[CAL] neutrals: s1=54.0 s2=54.0 s3=54.0
+Servos armed (no motion)
+========================================
+[INFO] Robot running. Press 't' for debug master. 'h' for help. Ctrl+C to exit.
+========================================
+
+[INFO] Signal 2 received. Shutting down...
+Disarming servos
+[INFO] Robot disarmed. Camera closed. Bye.
+[27:25:09.850158431] [4810] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[27:25:09.877280370] [4813] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[27:25:09.883284301] [4813] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[27:25:09.883364874] [4813] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media1 and ISP device /dev/media2
+[27:25:09.883404281] [4813] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[27:25:09.890622387] [4810] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1215 [0mconfiguring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[27:25:09.891112087] [4813] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:620 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. HW=ON Calibration=/home/jdryan1023/ballbot/config/calibration.json
+[CAL] neutrals: s1=54.0 s2=54.0 s3=54.0
+Servos armed (no motion)
+========================================
+[INFO] Robot running. Press 't' for debug master. 'h' for help. Ctrl+C to exit.
+========================================
+
+[INFO] Signal 2 received. Shutting down...
+Disarming servos
+[INFO] Robot disarmed. Camera closed. Bye.
+[0:17:43.859825655] [2174]  INFO Camera camera_manager.cpp:340 libcamera v0.7.0+rpt20260205
+[0:17:44.023406110] [2182]  INFO IPAProxy ipa_proxy.cpp:180 Using tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[0:17:44.030835380] [2182]  INFO Camera camera_manager.cpp:223 Adding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[0:17:44.030951194] [2182]  INFO RPI vc4.cpp:445 Registered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media1 and ISP device /dev/media2
+[0:17:44.031000082] [2182]  INFO RPI pipeline_base.cpp:1117 Using configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[0:17:44.039121363] [2174]  INFO Camera camera.cpp:1215 configuring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[0:17:44.039632672] [2182]  INFO RPI vc4.cpp:620 Sensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. HW=ON Calibration=/home/jdryan1023/ballbot/config/calibration.json
+[CAL] neutrals: s1=54.0 s2=54.0 s3=54.0
+Servos armed (no motion)
+[PID] kp=0.0063 ki=5e-05 kd=0.006025 alpha=0.65 beta=0.3
+============================================================
+[INFO] Robot running. Keys: q=quit  t=master  h=help  o=overlay
+[INFO] When master ON: c=camera  m=mask  r=controller  p=pid
+============================================================
+
+(python:2174): GLib-GObject-CRITICAL **: 20:13:00.942: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+
+[INFO] Signal 2 received. Shutting down...
+Disarming servos
+[INFO] Robot disarmed. Camera closed. Bye.

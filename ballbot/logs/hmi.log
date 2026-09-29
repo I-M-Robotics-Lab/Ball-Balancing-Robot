@@ -1,0 +1,232 @@
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[?1l>Traceback (most recent call last):
+  File "/usr/lib/python3.13/curses/__init__.py", line 78, in wrapper
+    cbreak()
+    ~~~~~~^^
+_curses.error: cbreak() returned ERR
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/__main__.py", line 4, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/main.py", line 395, in main
+    curses.wrapper(_curses_main)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/curses/__init__.py", line 100, in wrapper
+    nocbreak()
+    ~~~~~~~~^^
+_curses.error: nocbreak() returned ERR
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[?1l>Traceback (most recent call last):
+  File "/usr/lib/python3.13/curses/__init__.py", line 78, in wrapper
+    cbreak()
+    ~~~~~~^^
+_curses.error: cbreak() returned ERR
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/__main__.py", line 4, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/main.py", line 395, in main
+    curses.wrapper(_curses_main)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/curses/__init__.py", line 100, in wrapper
+    nocbreak()
+    ~~~~~~~~^^
+_curses.error: nocbreak() returned ERR
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/__main__.py", line 4, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/main.py", line 395, in main
+    curses.wrapper(_curses_main)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/curses/__init__.py", line 73, in wrapper
+    stdscr = initscr()
+  File "/usr/lib/python3.13/curses/__init__.py", line 29, in initscr
+    setupterm(term=_os.environ.get("TERM", "unknown"),
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              fd=_sys.__stdout__.fileno())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_curses.error: setupterm: could not find terminal
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/__main__.py", line 4, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/main.py", line 395, in main
+    curses.wrapper(_curses_main)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/curses/__init__.py", line 73, in wrapper
+    stdscr = initscr()
+  File "/usr/lib/python3.13/curses/__init__.py", line 29, in initscr
+    setupterm(term=_os.environ.get("TERM", "unknown"),
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              fd=_sys.__stdout__.fileno())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_curses.error: setupterm: could not find terminal
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/__main__.py", line 4, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/main.py", line 395, in main
+    curses.wrapper(_curses_main)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/curses/__init__.py", line 73, in wrapper
+    stdscr = initscr()
+  File "/usr/lib/python3.13/curses/__init__.py", line 29, in initscr
+    setupterm(term=_os.environ.get("TERM", "unknown"),
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              fd=_sys.__stdout__.fileno())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_curses.error: setupterm: could not find terminal
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[?1l>Traceback (most recent call last):
+  File "/usr/lib/python3.13/curses/__init__.py", line 78, in wrapper
+    cbreak()
+    ~~~~~~^^
+_curses.error: cbreak() returned ERR
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/opt/ballbot/src/ballbot/hmi/__main__.py", line 4, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/opt/ballbot/src/ballbot/hmi/main.py", line 395, in main
+    curses.wrapper(_curses_main)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/curses/__init__.py", line 100, in wrapper
+    nocbreak()
+    ~~~~~~~~^^
+_curses.error: nocbreak() returned ERR
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[?1l>Traceback (most recent call last):
+  File "/usr/lib/python3.13/curses/__init__.py", line 78, in wrapper
+    cbreak()
+    ~~~~~~^^
+_curses.error: cbreak() returned ERR
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/opt/ballbot/src/ballbot/hmi/__main__.py", line 4, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/opt/ballbot/src/ballbot/hmi/main.py", line 395, in main
+    curses.wrapper(_curses_main)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/curses/__init__.py", line 100, in wrapper
+    nocbreak()
+    ~~~~~~~~^^
+_curses.error: nocbreak() returned ERR
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[?1l>Traceback (most recent call last):
+  File "/usr/lib/python3.13/curses/__init__.py", line 78, in wrapper
+    cbreak()
+    ~~~~~~^^
+_curses.error: cbreak() returned ERR
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/opt/ballbot/src/ballbot/hmi/__main__.py", line 4, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/opt/ballbot/src/ballbot/hmi/main.py", line 395, in main
+    curses.wrapper(_curses_main)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/curses/__init__.py", line 100, in wrapper
+    nocbreak()
+    ~~~~~~~~^^
+_curses.error: nocbreak() returned ERR
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[?1l>Traceback (most recent call last):
+  File "/usr/lib/python3.13/curses/__init__.py", line 78, in wrapper
+    cbreak()
+    ~~~~~~^^
+_curses.error: cbreak() returned ERR
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/opt/ballbot/src/ballbot/hmi/__main__.py", line 4, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/opt/ballbot/src/ballbot/hmi/main.py", line 395, in main
+    curses.wrapper(_curses_main)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/curses/__init__.py", line 100, in wrapper
+    nocbreak()
+    ~~~~~~~~^^
+_curses.error: nocbreak() returned ERR
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/__main__.py", line 4, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/main.py", line 395, in main
+    curses.wrapper(_curses_main)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/curses/__init__.py", line 73, in wrapper
+    stdscr = initscr()
+  File "/usr/lib/python3.13/curses/__init__.py", line 29, in initscr
+    setupterm(term=_os.environ.get("TERM", "unknown"),
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              fd=_sys.__stdout__.fileno())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_curses.error: setupterm: could not find terminal
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/__main__.py", line 4, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/main.py", line 395, in main
+    curses.wrapper(_curses_main)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/curses/__init__.py", line 73, in wrapper
+    stdscr = initscr()
+  File "/usr/lib/python3.13/curses/__init__.py", line 29, in initscr
+    setupterm(term=_os.environ.get("TERM", "unknown"),
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              fd=_sys.__stdout__.fileno())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_curses.error: setupterm: could not find terminal
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[?1l>Traceback (most recent call last):
+  File "/usr/lib/python3.13/curses/__init__.py", line 78, in wrapper
+    cbreak()
+    ~~~~~~^^
+_curses.error: cbreak() returned ERR
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/__main__.py", line 4, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "/home/jdryan1023/ballbot/src/ballbot/hmi/main.py", line 395, in main
+    curses.wrapper(_curses_main)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/curses/__init__.py", line 100, in wrapper
+    nocbreak()
+    ~~~~~~~~^^
+_curses.error: nocbreak() returned ERR

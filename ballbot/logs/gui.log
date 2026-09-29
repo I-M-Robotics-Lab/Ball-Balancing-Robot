@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/tools/pyqt_gui/GUI.py", line 5, in <module>
+    from robotKinematics import RobotKinematics
+ModuleNotFoundError: No module named 'robotKinematics'

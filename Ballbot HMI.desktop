@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=BallBot HMI
+Comment=Launch BallBot curses HMI
+Terminal=false
+Categories=Development;Utility;
+Path=/opt/ballbot
+Exec=lxterminal -e /opt/ballbot/scripts/run_hmi.sh
+Icon=utilities-terminal
+StartupNotify=false

@@ -1,0 +1,299 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/main.py", line 6, in <module>
+    from camera import Camera
+ModuleNotFoundError: No module named 'camera'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/main.py", line 6, in <module>
+    from camera import Camera
+ModuleNotFoundError: No module named 'camera'
+[3:35:06.036738515] [2724] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[3:35:06.063927174] [2729] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[3:35:06.070005434] [2729] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[3:35:06.070104192] [2729] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media2 and ISP device /dev/media0
+[3:35:06.070155803] [2729] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[3:35:06.083298461] [2724] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1215 [0mconfiguring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[3:35:06.083811086] [2729] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:620 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. Calibration loaded from /home/jdryan1023/ballbot/src/ballbot/runtime/calibration.json
+Servos armed (neutral-first)
+========================================
+[INFO] Robot running. Press 't' for debug master. 'h' for help. Ctrl+C to exit.
+========================================
+
+[INFO] Ctrl+C received. Exiting...
+Disarming servos
+[INFO] Robot disarmed. Camera closed. Bye.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/main.py", line 6, in <module>
+    from camera import Camera
+ModuleNotFoundError: No module named 'camera'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/main.py", line 6, in <module>
+    from camera import Camera
+ModuleNotFoundError: No module named 'camera'
+[6:00:45.542069112] [3276] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[6:00:45.569213184] [3281] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[6:00:45.575215167] [3281] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[6:00:45.575312648] [3281] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media2 and ISP device /dev/media0
+[6:00:45.575359666] [3281] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[6:00:45.582713618] [3276] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1215 [0mconfiguring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[6:00:45.583207744] [3281] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:620 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. HW=ON Calibration=/home/jdryan1023/ballbot/config/calibration.json
+[CAL] neutrals: s1=54.0 s2=54.0 s3=54.0
+Servos armed (neutral-first)
+========================================
+[INFO] Robot running. Press 't' for debug master. 'h' for help. Ctrl+C to exit.
+========================================
+
+[INFO] Ctrl+C received. Exiting...
+Disarming servos
+[INFO] Robot disarmed. Camera closed. Bye.
+[8:52:24.191642473] [3544] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[8:52:24.218736076] [3547] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[8:52:24.224788099] [3547] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[8:52:24.224888450] [3547] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media2 and ISP device /dev/media0
+[8:52:24.224936894] [3547] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[8:52:24.232230757] [3544] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1215 [0mconfiguring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[8:52:24.232723346] [3547] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:620 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. HW=ON Calibration=/home/jdryan1023/ballbot/config/calibration.json
+[CAL] neutrals: s1=54.0 s2=54.0 s3=54.0
+Servos armed (neutral-first)
+========================================
+[INFO] Robot running. Press 't' for debug master. 'h' for help. Ctrl+C to exit.
+========================================
+
+[INFO] Ctrl+C received. Exiting...
+Disarming servos
+[INFO] Robot disarmed. Camera closed. Bye.
+[0:05:09.279731385] [1926] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[0:05:09.306878411] [1934] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[0:05:09.312789995] [1934] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[0:05:09.312869625] [1934] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media4 and ISP device /dev/media1
+[0:05:09.312912254] [1934] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[0:05:09.326052091] [1926] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1215 [0mconfiguring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[0:05:09.326537740] [1934] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:620 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. HW=ON Calibration=/home/jdryan1023/ballbot/config/calibration.json
+[CAL] neutrals: s1=54.0 s2=54.0 s3=54.0
+Servos armed (neutral-first)
+========================================
+[INFO] Robot running. Press 't' for debug master. 'h' for help. Ctrl+C to exit.
+========================================
+
+[INFO] Ctrl+C received. Exiting...
+Disarming servos
+[INFO] Robot disarmed. Camera closed. Bye.
+[1:22:58.500180549] [2588] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[1:22:58.532763989] [2591] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[1:22:58.545295501] [2591] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[1:22:58.545376778] [2591] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media4 and ISP device /dev/media1
+[1:22:58.545415610] [2591] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[1:22:58.553106397] [2588] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1215 [0mconfiguring streams: (0) 1640x1232-RGB888/sRGB (1) 1640x1232-SBGGR10_CSI2P/RAW
+[1:22:58.553591595] [2591] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:620 [0mSensor: /base/soc/i2c0mux/i2c@1/imx219@10 - Selected sensor format: 1640x1232-SBGGR10_1X10/RAW - Selected unicam format: 1640x1232-pBAA/RAW
+RobotController ready. HW=ON Calibration=/home/jdryan1023/ballbot/config/calibration.json
+[CAL] neutrals: s1=54.0 s2=54.0 s3=54.0
+[1:23:23.545960276] [2609] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[1:23:23.580113540] [2612] [1;31mERROR [1;37mV4L2 [1;34mv4l2_device.cpp:411 [0;32m'imx219 10-0010': [0mUnable to set controls: Device or resource busy
+[1:23:23.590022434] [2612] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[1:23:23.600650616] [2612] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[1:23:23.600727893] [2612] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media4 and ISP device /dev/media1
+[1:23:23.600765985] [2612] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[1:23:23.604643981] [2609] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1020 [0mPipeline handler in use by another process
+Camera __init__ sequence did not complete.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 353, in __init__
+    self._open_camera()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 565, in _open_camera
+    self.camera.acquire()
+    ~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: Failed to acquire camera: Device or resource busy
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/main.py", line 70, in <module>
+    cam = Camera()
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/camera.py", line 11, in __init__
+    self.picam2 = Picamera2()
+                  ~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 365, in __init__
+    raise RuntimeError("Camera __init__ sequence did not complete.")
+RuntimeError: Camera __init__ sequence did not complete.
+[1:23:38.859900630] [2621] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[1:23:38.892453322] [2624] [1;31mERROR [1;37mV4L2 [1;34mv4l2_device.cpp:411 [0;32m'imx219 10-0010': [0mUnable to set controls: Device or resource busy
+[1:23:38.901998684] [2624] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[1:23:38.910228338] [2624] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[1:23:38.910510168] [2624] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media4 and ISP device /dev/media1
+[1:23:38.910702000] [2624] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[1:23:38.916680492] [2621] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1020 [0mPipeline handler in use by another process
+Camera __init__ sequence did not complete.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 353, in __init__
+    self._open_camera()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 565, in _open_camera
+    self.camera.acquire()
+    ~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: Failed to acquire camera: Device or resource busy
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/main.py", line 70, in <module>
+    cam = Camera()
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/camera.py", line 11, in __init__
+    self.picam2 = Picamera2()
+                  ~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 365, in __init__
+    raise RuntimeError("Camera __init__ sequence did not complete.")
+RuntimeError: Camera __init__ sequence did not complete.
+[1:24:00.210239528] [2633] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[1:24:00.237229248] [2636] [1;31mERROR [1;37mV4L2 [1;34mv4l2_device.cpp:411 [0;32m'imx219 10-0010': [0mUnable to set controls: Device or resource busy
+[1:24:00.249966245] [2636] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[1:24:00.256831766] [2636] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[1:24:00.256911488] [2636] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media4 and ISP device /dev/media1
+[1:24:00.256950283] [2636] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[1:24:00.259855679] [2633] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1020 [0mPipeline handler in use by another process
+Camera __init__ sequence did not complete.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 353, in __init__
+    self._open_camera()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 565, in _open_camera
+    self.camera.acquire()
+    ~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: Failed to acquire camera: Device or resource busy
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/main.py", line 70, in <module>
+    cam = Camera()
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/camera.py", line 11, in __init__
+    self.picam2 = Picamera2()
+                  ~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 365, in __init__
+    raise RuntimeError("Camera __init__ sequence did not complete.")
+RuntimeError: Camera __init__ sequence did not complete.
+[1:25:15.866233174] [2681] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[1:25:15.898938927] [2684] [1;31mERROR [1;37mV4L2 [1;34mv4l2_device.cpp:411 [0;32m'imx219 10-0010': [0mUnable to set controls: Device or resource busy
+[1:25:15.911387082] [2684] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[1:25:15.921946626] [2684] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[1:25:15.922286234] [2684] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media4 and ISP device /dev/media1
+[1:25:15.922497491] [2684] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[1:25:15.928234879] [2681] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1020 [0mPipeline handler in use by another process
+Camera __init__ sequence did not complete.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 353, in __init__
+    self._open_camera()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 565, in _open_camera
+    self.camera.acquire()
+    ~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: Failed to acquire camera: Device or resource busy
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/main.py", line 70, in <module>
+    cam = Camera()
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/camera.py", line 11, in __init__
+    self.picam2 = Picamera2()
+                  ~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 365, in __init__
+    raise RuntimeError("Camera __init__ sequence did not complete.")
+RuntimeError: Camera __init__ sequence did not complete.
+[1:29:26.363526640] [2710] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[1:29:26.414394783] [2713] [1;31mERROR [1;37mV4L2 [1;34mv4l2_device.cpp:411 [0;32m'imx219 10-0010': [0mUnable to set controls: Device or resource busy
+[1:29:26.426092295] [2713] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[1:29:26.437544661] [2713] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[1:29:26.437671345] [2713] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media4 and ISP device /dev/media1
+[1:29:26.437733233] [2713] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[1:29:26.442413194] [2710] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1020 [0mPipeline handler in use by another process
+Camera __init__ sequence did not complete.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 353, in __init__
+    self._open_camera()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 565, in _open_camera
+    self.camera.acquire()
+    ~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: Failed to acquire camera: Device or resource busy
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/main.py", line 70, in <module>
+    cam = Camera()
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/camera.py", line 11, in __init__
+    self.picam2 = Picamera2()
+                  ~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 365, in __init__
+    raise RuntimeError("Camera __init__ sequence did not complete.")
+RuntimeError: Camera __init__ sequence did not complete.
+[1:29:36.161900604] [2724] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[1:29:36.202864851] [2727] [1;31mERROR [1;37mV4L2 [1;34mv4l2_device.cpp:411 [0;32m'imx219 10-0010': [0mUnable to set controls: Device or resource busy
+[1:29:36.213485910] [2727] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[1:29:36.220351963] [2727] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[1:29:36.220504184] [2727] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media4 and ISP device /dev/media1
+[1:29:36.220569536] [2727] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+[1:29:36.229412017] [2724] [1;32m INFO [1;37mCamera [1;34mcamera.cpp:1020 [0mPipeline handler in use by another process
+Camera __init__ sequence did not complete.
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 353, in __init__
+    self._open_camera()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 565, in _open_camera
+    self.camera.acquire()
+    ~~~~~~~~~~~~~~~~~~~^^
+RuntimeError: Failed to acquire camera: Device or resource busy
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/main.py", line 70, in <module>
+    cam = Camera()
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/camera.py", line 11, in __init__
+    self.picam2 = Picamera2()
+                  ~~~~~~~~~^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 365, in __init__
+    raise RuntimeError("Camera __init__ sequence did not complete.")
+RuntimeError: Camera __init__ sequence did not complete.
+[0:08:30.623311982] [1766] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:340 [0mlibcamera v0.6.0+rpt20251202
+[0:08:30.657351832] [1769] [1;32m INFO [1;37mIPAProxy [1;34mipa_proxy.cpp:180 [0mUsing tuning file /usr/share/libcamera/ipa/rpi/vc4/imx219.json
+[0:08:30.663276642] [1769] [1;32m INFO [1;37mCamera [1;34mcamera_manager.cpp:223 [0mAdding camera '/base/soc/i2c0mux/i2c@1/imx219@10' for pipeline handler rpi/vc4
+[0:08:30.663356919] [1769] [1;32m INFO [1;37mRPI [1;34mvc4.cpp:445 [0mRegistered camera /base/soc/i2c0mux/i2c@1/imx219@10 to Unicam device /dev/media1 and ISP device /dev/media0
+[0:08:30.663400011] [1769] [1;32m INFO [1;37mRPI [1;34mpipeline_base.cpp:1111 [0mUsing configuration file '/usr/share/libcamera/pipeline/rpi/vc4/rpi_apps.yaml'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/main.py", line 72, in <module>
+    cam = Camera(...)
+  File "/home/jdryan1023/ballbot/src/ballbot/runtime/camera.py", line 12, in __init__
+    config = self.picam2.create_preview_configuration(main={"size": resolution, "format": format}, controls={"FrameDurationLimits": (8333, 8333)})
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 777, in create_preview_configuration
+    self.align_stream(main, optimal=False)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/picamera2/picamera2.py", line 1036, in align_stream
+    stream_config["size"] = (size[0] - size[0] % align, size[1] - size[1] % 2)
+                             ~~~~^^^
+TypeError: 'ellipsis' object is not subscriptable

@@ -24,57 +24,206 @@ Discord: https://discord.com/invite/WJuUWsy6DJ
 
 The 3D models and print profile for a Bambu A1 printer can be found here: https://makerworld.com/en/models/1197770-ball-balancing-robot#profileId-1210633
 
-The materials needed are:
-| Part Name                     | Quantity |
-|-------------------------------|----------|
-| M2 x 8 Cap Head Socket Screw  | 6        |
-| M2.5 x 10 Cap Head Socket Screw  | 4        |
-| M3 x 5 Socket Head Screw      | 18       |
-| M3 x 10 Socket Head Screw     | 3        |
-| M3 x 15 Socket Head Screw     | 1        |
-| M3 x 20 Socket Head Screw     | 3        |
-| M4 x 20 Socket Head Screw     | 6        |
-| M4 x 30 Socket Head Screw     | 6        |
-| M5 x 30 Socket Head Screw     | 3        |
-| M3 Hex Nut                   | 3        |
-| M4 Nylock Nut                | 6        |
-| M4 Hex Nut                   | 12       |
-| M3 x 10 Standoff             | 9        |
-| M3 x 15 Standoff             | 6        |
-| M3 x 20 Standoff             | 3        |
-| Standoff                     | 1        |
-| 4-10 Bearing                 | 6        |
-| Rubber Foot 12x9x9           | 3        |
-| M5 Washer                    | 6        |
+# Ballbot – Ball Balancing Robot (Rev 9)
+
+A Raspberry Pi–based ball balancing robot using real-time vision feedback and PID control.
+
+Rev 9 represents a structural milestone:
+- Clean `src/` layout package structure
+- Separation of HMI and runtime
+- Headless-safe runtime operation
+- SSH auto-launch capability
+- JSON-driven configuration
+- Modular subsystem architecture
 
 ---
 
-### Motor Angle Calibration
-Each of the three motors must be calibrated. Follow these exact steps:
+## Getting Started
 
-1. **Set all motor offsets to `0`.**  
-   In `controller.py`, inside the `set_motor_angles` function under class `RobotController`, make sure it looks like this:  
-   ```python
-   self.s1.angle = clamp(theta1)
-   self.s2.angle = clamp(theta2)
-   self.s3.angle = clamp(theta3)
-    ```
-2. **Initialize the robot.**  
-   Power on the robot. Then, in your terminal (in correct directory), run:  
-   `python controller.py`  
-   This sets the initial motor positions. Once the robot has reached its position, **do not touch it**. Power it off, then use a level or measurement tool to check how flat the top plate is.
-
-3. **Tune each motor's angle offset.**  
-   Based on how the plate is tilted, adjust each motor's angle by adding or subtracting an offset. Modify the code like this:
-   ```python
-   self.s1.angle = clamp(theta1) + OFFSET_S1
-   self.s2.angle = clamp(theta2) + OFFSET_S2
-   self.s3.angle = clamp(theta3) + OFFSET_S3
-   ```
-   Replace each `OFFSET_Sn` with the value needed to make the plate level. These values are specific to your hardware and may differ for each motor.
-
-4. **Iterate until balanced.**  
-   Repeat steps 2 and 3. Re-run the controller, check the plate, and adjust the offsets as needed. Continue this process until the top plate is completely flat and stable.
+This section describes the full process from mechanical assembly to first runtime execution.
 
 ---
+
+## 1. Mechanical Assembly
+
+### 1.1 Obtain Components
+
+Refer to the Bill of Materials (BOM) for required hardware:
+
+- Raspberry Pi
+- Camera module
+- PCA9685 I2C servo driver
+- Servos
+- Power supply
+- Ball and platform hardware
+
+---
+
+### 1.2 Print and Assemble Robot Structure
+
+- 3D print structural components.
+- Assemble platform and servo linkages.
+- Ensure:
+  - Platform pivots freely.
+  - No binding in linkages.
+  - Servo horns are mounted securely.
+  - Ball rolls smoothly across platform surface.
+
+Mechanical slop or binding significantly affects control stability.
+
+---
+
+## 2. Raspberry Pi Setup & Electrical Integration
+
+### 2.1 Flash Raspberry Pi OS
+
+- Use Raspberry Pi Imager.
+- Install Raspberry Pi OS (Bookworm recommended).
+- Enable SSH.
+- Configure WiFi if required.
+- Set username and password.
+
+Boot the Pi and confirm SSH access.
+
+---
+
+### 2.2 Install Electrical Components
+
+Wire components according to wiring instructions:
+
+- Camera → CSI connector
+- PCA9685 → I2C (SDA/SCL)
+- Servo power isolated from Pi 5V rail (recommended)
+- Common ground between servo supply and Pi
+
+Enable I2C:
+
+```bash
+sudo raspi-config
+# Interface Options → I2C → Enable
+```
+
+Reboot.
+
+Confirm I2C device is detected:
+
+```bash
+i2cdetect -y 1
+```
+
+You should see the PCA9685 address (typically `0x40`).
+
+---
+
+### 2.3 Install Software
+
+Run installer:
+
+```bash
+bash scripts/install.sh
+```
+
+This installs:
+- Python dependencies
+- System libraries
+- OpenCV
+- libcamera stack
+
+---
+
+## 3. Initial Calibration via HMI
+
+Move Ballbot HMI.desktop to desktop
+
+Launch the HMI:
+
+```bash
+hmi
+```
+
+The HMI runs over SSH using curses and provides jog controls and calibration tools.
+
+---
+
+### 3.1 Zero Pose Capture (Mechanical Reference)
+
+Before applying offsets, establish a mechanical zero pose.
+
+Procedure:
+
+1. Power the system.
+2. Arm the servos.
+3. Manually jog the platform until it is visually level.
+4. Trigger **Zero Pose Capture** from the HMI.
+5. Confirm the pose is recorded.
+
+This step defines the neutral mechanical reference position for the platform. The zero pose is stored and used as the baseline for subsequent offset adjustments.
+
+---
+
+### 3.2 Offset Calibration
+
+After zero pose capture:
+
+1. Fine-adjust X and Y offsets using jog controls.
+2. Observe platform level and ball behavior.
+3. Save calibration values.
+4. Disarm and re-arm to confirm repeatability.
+
+Calibration values are written to:
+
+```
+config/calibration.json
+```
+
+---
+
+### 3.3 Verification
+
+After calibration:
+
+- Platform should return to level at neutral command.
+- No servo drift at idle.
+- No bias in ball roll direction.
+- Servo sounds should be symmetrical (no constant correction hum).
+
+Accurate zero pose capture is critical for stable PID performance.
+
+---
+
+## 4. Run Runtime (Control Loop)
+
+Start runtime from the HMI or directly:
+
+```bash
+bash scripts/run_runtime.sh
+```
+
+Runtime performs:
+- Frame capture (~60 Hz)
+- Vision processing (~50 Hz)
+- PID control
+- Servo actuation
+
+If running over SSH (headless):
+- Video preview is disabled automatically.
+- Control loop remains fully functional.
+
+Press `q` to exit runtime safely.
+
+On shutdown:
+- Servos disarm.
+- Camera terminates cleanly.
+
+---
+
+## First Successful Bring-Up Checklist
+
+Before declaring success:
+
+- Ball remains near center without oscillation.
+- No mechanical binding.
+- Servos respond smoothly.
+- No runaway tilt on startup.
+- PID gains stable at low disturbance.
 

@@ -1,0 +1,7 @@
+flask
+flask-cors
+numpy
+pyqtgraph
+adafruit-blinka
+adafruit-circuitpython-servokit
+adafruit-circuitpython-pca9685
